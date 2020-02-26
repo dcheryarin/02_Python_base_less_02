@@ -6,8 +6,13 @@ while True:
     if elem_end == "Y":
         break
 print(list)
-for ind, el in enumerate(list):
-    print(ind, el)
 print(len(list))
-print(len(list) // 2)
-while len(list) // 2
+
+i = 0
+
+while i < len(list) - 1:
+    if i % 2 == 0:
+        list[i], list[i + 1] = list[i + 1], list[i]
+    i += 1
+
+print(list)
